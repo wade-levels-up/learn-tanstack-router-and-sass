@@ -10,6 +10,15 @@ const RootLayout = () => (
       <Link to="/about" className="[&.active]:font-bold">
         About
       </Link>
+      <Link
+        to="/posts"
+        search={{
+          query: "post1",
+        }}
+        className="[&.active]:font-bold"
+      >
+        Posts
+      </Link>
     </div>
     <hr />
     <Outlet />
